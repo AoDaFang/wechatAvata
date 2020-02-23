@@ -1,0 +1,114 @@
+.main{
+	position: fixed;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://m.qpic.cn/psc?/V13e6DBC14h32V/YWvjNfAyIVey1fwA2tD8GIG2MgQvU8w*x*Eup5TfTnrpICJn*VYSMRTjjbiDpNUyqCepL6mUUxR*j6VRQLc731TiGYk8I1BFojCp8CXurhk!/b&bo=7gKKBQAAAAADB0E!&rf=viewer_4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.deal-avatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.van-slide-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50rpx;
+}
+.van-slide-bar-text{
+    font-size: 25rpx;
+    color: #eee;
+}
+.van-slider-up{
+    width: 80vw;
+}
+.avatar-bg{
+    width: 400rpx;
+    height: 400rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.avatar-container{
+    /* background-color: pink; */
+    position: relative;
+    width: 380rpx;
+    height: 380rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.zIndex-1{
+    z-index: -1;
+}
+.zIndex1 {
+    z-index: 1;
+}
+.mask-img{
+    position: absolute;
+    width: 130rpx;
+    z-index: 1;
+}
+
+.chose-mask{
+    width: 650rpx;
+    height: 450rpx;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 20rpx;
+    overflow-y: scroll;
+}
+.mask-item{
+    width: 150rpx;
+    height: 150rpx;
+    margin-left: 10rpx;
+    background-color: #ccc;
+    float: left;
+    border-radius: 20rpx;
+    margin-top: 10rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10rpx;
+}
+.mask-item image{
+    width: 100%;
+}
+.synthesis-btn{
+    width: 300rpx;
+    height: 100rpx;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50rpx;
+    background-image: linear-gradient(to right, #F2EE9F, #FFE244);
+    box-shadow: 5rpx 5rpx 5rpx #aa8;
+    color: #fff;
+    line-height: 100rpx;
+    border-radius: 50rpx;
+    margin-top: 0.3rem;
+}
+.overlay-text{
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

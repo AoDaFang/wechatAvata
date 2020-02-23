@@ -1,0 +1,53 @@
+<view class="main" hover-class="none" hover-stop-propagation="false">
+    <!-- 头像处理部分 -->
+    <view class="deal-avatar" hover-class="none" hover-stop-propagation="false">
+        <view class="avatar-bg" hover-class="none" hover-stop-propagation="false">
+            <movable-area class="avatar-container" id="avatar-container" hover-class="none"
+                hover-stop-propagation="false">
+                <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"
+                    wx:if="{{!userAvatar.length}}">点击登录获取头像</button>
+                <image class="avatar-img draw" src="{{userAvatar}}" mode="widthFix" wx:if="{{userAvatar.length}}">
+                </image>
+                <movable-view direction="all" x="60" y="60">
+                    <image class="mask-img draw" id="mask-img" src="{{maskImg}}" mode="widthFix"
+                        wx:if="{{userAvatar.length && !isSynthesisOK}}"
+                        style="transform:rotate({{avatarRotate}}deg) scale({{avatarScale}});"></image>
+                </movable-view>
+            </movable-area>
+        </view>
+        <!-- 调整大小和角度 -->
+        <view class="van-slide-bar" hover-class="none" hover-stop-propagation="false" wx:if="{{!isSynthesisOK}}">
+            <text class="van-slide-bar-text">调整大小：</text>
+            <van-slider class="van-slider-up" value="50" data-type="Scale" bind:drag="onChange" active-color="#FFE244"
+                bar-height="4px" />
+        </view>
+        <view class="van-slide-bar" hover-class="none" hover-stop-propagation="false" wx:if="{{!isSynthesisOK}}">
+            <text class="van-slide-bar-text">调整角度：</text>
+            <van-slider class="van-slider-up" value="50" data-type="Rotate" bind:drag="onChange" active-color="#FFE244"
+                bar-height="4px" />
+        </view>
+    </view>
+
+    <!-- 选择口罩部分 -->
+    <view class="chose-mask" hover-class="none" hover-stop-propagation="false" wx:if="{{!isSynthesisOK}}">
+        <view class="mask-item" hover-class="none" hover-stop-propagation="false"
+            wx:for="{{maskList}}" wx:key="index" data-index="{{index}}" bindtap="dealMaskTap">
+            <image class="" src="{{item}}" mode="widthFix"
+                lazy-load="false"></image>
+        </view>
+    </view>
+    <view wx:if="{{!isSynthesisOK}}" class="synthesis-btn" hover-class="none" hover-stop-propagation="false"
+        bindtap="dealSynthesis">合成</view>
+    <view wx:if="{{isSynthesisOK}}" class="synthesis-btn" hover-class="none" hover-stop-propagation="false"
+        bindtap="saveImage">保存头像</view>
+    <view wx:if="{{isSynthesisOK}}" class="synthesis-btn" hover-class="none" hover-stop-propagation="false"
+        bindtap="restart">再来一张</view>
+</view>
+<painter customStyle='position: absolute; left: -9999rpx;' palette="{{template}}" bind:imgOK="onImgOK"
+    widthPixels="1000" />
+<van-overlay show="{{ isShowOverlay }}">
+    <view class="overlay-text">
+        正在合成请稍后...
+    </view>
+</van-overlay>
+<!-- <image src="{{image}}" style="width: 380rpx; height: 380rpx;  position: absolute; z-index: 999;"/> -->
