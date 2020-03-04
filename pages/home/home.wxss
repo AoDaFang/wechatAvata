@@ -1,4 +1,6 @@
 .main{
+    padding-top: 5vh;
+    box-sizing: border-box;
 	position: fixed;
     overflow-x: hidden;
     width: 100%;
@@ -29,7 +31,7 @@
     color: #eee;
 }
 .van-slider-up{
-    width: 80vw;
+    width: 70vw;
 }
 .avatar-bg{
     width: 400rpx;
@@ -47,7 +49,9 @@
     width: 380rpx;
     height: 380rpx;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    /* justify-content: center; */
     align-items: center;
 }
 .avatar-img{
@@ -111,4 +115,10 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+.my-logo{
+    position: absolute;
+    width: 7vw;
+    bottom: 5vw;
+    right: 5vw;
 }

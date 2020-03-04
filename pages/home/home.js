@@ -16,7 +16,29 @@ Page({
 		avatarLeft: 0, // 头像left值
 		avatarTop: 0, // 头像top值,
 		isShowOverlay: false, // 是否显示遮罩层
-		maskList:[
+		maskList: [
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GBEJEQCxCEaAwG*s26w4sDL03oAvDS14B.E412ajvuJ1paB5UA2E1VqDnKPVQG6uwtYUYDErfXsfFu6Udr0fo3M!/b&bo=FgHMABYBzAADCSw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GKvtx0PBovz7p5ACENI7PHCAyByRilAadArNgHLjPWJB5HacoG7t.zbAtSK3TD*vIQn05PWUSbtrEHre9edt*6A!/b&bo=FgHMABYBzAADGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GCcZSEed6Ep3pHrJYzNfCu8B49q3G4wwdPTcXglirS19zEBUuIU7nlWaIAlYYcahtCF7jdVqh27tM2.vdg5Bbiw!/b&bo=DgGyAA4BsgADGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GNJXDHsNng.z5IwpEkHLceAD96bU3ke6Fd7ERBd5UAVQvnmIyrGxeiQGlzn9vQqE7QpS1ILy5BmnSPQ8Bw3QzK4!/b&bo=DgGyAA4BsgADGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GDk6v61HxvVEwzmJqEmcAVFEfoTvMO6MVsxL74SaJW7UJZ3aHf9fLXU*N7OOhD3bxdSKp8POLqCJeKbV2aUeNgk!/b&bo=GgG0ABoBtAADGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GBjx.YqT1g8gX5Q1oh1L8BcHMwT*s7ov5vWtFG89pmMexMusLe2TyvaNWvQ9IWYm4lrg4lOdeAh9bJa69lP8H8g!/b&bo=GgG0ABoBtAADGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GGFzOjOzSRIONAjHqs2r8lza7Vt54rZWyezzUBrdnMQ1VB2fZJYO4EYljCECq16Y.eEed07Ghfrnsnbo07cYIGg!/b&bo=AQMCAgEDAgIDKQw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GL1VxG3w4dKlQslQwzQQVeJr4uH.YuL2AfBF.FH2dytpQCzgrXTxoVNNa3dFqfitVnG2jHF0qn4fhSIcAViOMzI!/b&bo=*QP2Af0D9gEDKQw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GAXIvyZqyQ9q4PPSyVr7amUsIcJejoYoXNwqgYBYz5Cz5Ww5PTWAKqx3M3JdzGaDuwLpyn2Mr1ABlriRbEEqTrQ!/b&bo=NwOtATcDrQEDKQw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GDyuKWFwtYDu81aUmsb4ND5nVQ7PKu2irsmQPQBG5kH3h8QK4aJiRqjGGc0XGERM2.S8BOaKHJnKmkAU01g6hzk!/b&bo=DwOuAg8DrgIDGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GL2sy1KyeupUFGX9Se1KHiCIViAqLWdILaaVUL5hTB19YZMjsGLF0PQ4Yx9VmG7LCFwN4Kqe74zzxtS4Pm16tFQ!/b&bo=NAOpATQDqQEDKQw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GPakltaZ3rxR.PErqFpRLVCZKMQ.RWmzTgoReTF0B3JReSEllCvqnCjJHn.D08YhjOLN*0OVYPZV9Glu9Wf7dmw!/b&bo=cQIJAnECCQIDGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GIL005izD7yeLbx1PFMs6rTIiEw6ymfgjbb7bs9aI9OUgIjTBSDxy30Rdpkp1QNMJnndwe6Ri0zNAl9H.926e98!/b&bo=VALvAVQC7wEDGTw!&rf=viewer_4',
+			'https://r.photo.store.qq.com/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GK8juXjfqFIpW4ZUZfwxqrL0.wj5qgTmzpPOgyqrdoKQ*6YHSNmCm6aRt8tWptILtumNle1OoJ7ZwIsQnhZM8LY!/r',
+			'https://r.photo.store.qq.com/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GBYAG6oJhUXWFhBnuANOkRvPgQ7QoppRG3wzONmsNhiYPE68n1uUpqB72UbxV1X4b*Qb86WXaagYRR3EMdd1fBQ!/r',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GD4cdtiKVTnXzQc8bTnwSD6cUNS*fjhYFacnkIokHHAOWbhb4fVqQav2ufaFQ1ksX9FLviGPF4JE9UM1awliYw8!/b&bo=uwDyALsA8gADGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GCBwqe79UmCvHIWy5yqI0rn7x5CvmR*pafaIl1L12hmEkBE2nOHqdGh466J.6MZkdYtBPvD*KGYI4*eqmoAqeZY!/b&bo=rgCcAK4AnAADGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GOcbIEt6h*dMYs0TMdslqNKtISigS*yKvWl9e6YxMxcTJODVJ0yIzKm063gkRbDLMbYEYRrMnXhj4v0zphPvGME!/b&bo=rgCcAK4AnAADGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GGgOeNe4*4K5kA7WWkLlH336G1s5WKczeZbgSTA4dQb8bkNaSgrmQ*ahzAUr9gOFTk7rkcI1b8ExmeThWjW54m0!/b&bo=gwHDAYMBwwEDGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GL3T9k64NF2iMcwvKjps0zceZWyM7DjagsbRMqB87W9xLbvn8XwXiR*msDFG038QKHYtn*AKoHwQxOHrABu1ANk!/b&bo=gwHDAYMBwwEDGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GJZvGfXz4Zt4BpTjIQwPDG30iknN9Qi8ALZrZ54CGym3rB0fmLHd3cnxzOQrzD4dB4wbWXIDmjVyqUTx3SPFy24!/b&bo=EgG0ABIBtAADGTw!&rf=viewer_4',
+			'https://m.qpic.cn/psc?/V13e6DBC178CUE/YWvjNfAyIVey1fwA2tD8GFegKlDRcv.qHOS7IKsotDuZU9Dz9.uTJ82CsZ7zJTKHAYp9fg8r0c0f2*fyKEthpy.AL2c*HafckGm3O1E.ycs!/b&bo=EgG0ABIBtAADGTw!&rf=viewer_4',
 			'https://m.qpic.cn/psc?/V13e6DBC14h32V/YWvjNfAyIVey1fwA2tD8GC6lLPv0.fPX5AazZQVjO1UT0v9Tdin*2Q0YdjQ9Ed6NPDHKStqc9YhjIwf4dxwpMNrMV1c*nZ6eDHoMYrK722U!/b&bo=ywCMAAAAAAADB2U!&rf=viewer_4',
 			'https://m.qpic.cn/psc?/V13e6DBC14h32V/YWvjNfAyIVey1fwA2tD8GD1*jM29.FGWZnvP0L8On8amPMbSFSHqT8CwGdI1FSMlNlVbWE.wj42ewCgPvQf.037XCRP.ivfn*17CLz9t5DI!/b&bo=dwKPAgAAAAADB9o!&rf=viewer_4',
 			'https://m.qpic.cn/psc?/V13e6DBC14h32V/YWvjNfAyIVey1fwA2tD8GO.mmNYOR4yGEXeUXX5KCsCxfBpgOpKhGOy0xxY5i85bufi79Pth1SwyNGrmJ02g4bx2shwWE6nEdyVYje3hBBE!/b&bo=lAKoAgAAAAADBx4!&rf=viewer_4',
@@ -34,6 +56,11 @@ Page({
      * 生命周期函数--监听页面加载
      */
 	onLoad: function (options) {
+		wx.showToast({
+			title: '您可以拖动口罩 进行位置的移动',
+			icon: 'none',
+			duration: 2500
+		})
 	},
 
 	onChange(event) {
@@ -46,13 +73,48 @@ Page({
 	},
 	// 获取用户头像
 	getUserInfo(res) {
-		var userAvatar = JSON.parse(res.detail.rawData).avatarUrl;
+		var userAvatar = JSON.parse(res.detail.rawData).avatarUrl.replace('132', '0'); // 增加获取头像的清晰度
+		console.log(userAvatar)
 		this.setData({ userAvatar });
 	},
 	// 点击选择口罩
 	dealMaskTap(e) {
 		const maskImg = this.data.maskList[e.currentTarget.dataset.index];
 		this.setData({ maskImg });
+	},
+	// 点击上传图片
+	uploadImg() {
+		console.log("上传图片");
+		const self = this;
+		wx.chooseImage({
+			count: 1,
+			sizeType: ['original', 'compressed'],
+			sourceType: ['album', 'camera'],
+			success(res) {
+				// tempFilePath可以作为img标签的src属性显示图片
+				const userAvatar = res.tempFilePaths[0]
+				console.log(userAvatar)
+				self.setData({ userAvatar });
+			},
+			fail(e) {
+				console.log('获取图片失败', e)
+			}
+		})
+	},
+	// 声明
+	statement() {
+		wx.showModal({
+			title: '声明',
+			content: '欢迎光临~ 本小程序不用于商业用途，只供个人学习交流。所用图片来来自于腾讯新闻、昵图网、百度图片、微信。如果有什么建议欢迎大家提出(fmw3264@163.com)。谢谢使用~(*^▽^*)',
+			showCancel: false,
+			success(res) {
+				if (res.confirm) {
+					console.log('用户点击确定')
+				} else if (res.cancel) {
+					console.log('用户点击取消')
+				}
+			}
+		})
 	},
 	// 点击合成
 	dealSynthesis() {
@@ -121,7 +183,7 @@ Page({
 	saveImage() {
 		wx.saveImageToPhotosAlbum({
 			filePath: this.imagePath,
-			success: function(){
+			success: function () {
 				wx.showToast({
 					title: '保存成功 请去相册查看',
 					icon: 'none',

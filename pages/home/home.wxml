@@ -6,6 +6,8 @@
                 hover-stop-propagation="false">
                 <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"
                     wx:if="{{!userAvatar.length}}">点击登录获取头像</button>
+                <button bindtap="uploadImg"
+                    wx:if="{{!userAvatar.length}}">上传头像</button>
                 <image class="avatar-img draw" src="{{userAvatar}}" mode="widthFix" wx:if="{{userAvatar.length}}">
                 </image>
                 <movable-view direction="all" x="60" y="60">
@@ -42,6 +44,8 @@
         bindtap="saveImage">保存头像</view>
     <view wx:if="{{isSynthesisOK}}" class="synthesis-btn" hover-class="none" hover-stop-propagation="false"
         bindtap="restart">再来一张</view>
+    <image class="my-logo" bindtap="statement" src="http://a1.qpic.cn/psc?/V13e6DBC14h32V/S8ACDDjQaRqj9S24Z8034eHEW9CBDYfP3BhKQGAkCZEkvqsCliAZFPx*iq7lsH7cr0o3jquaf96aIBFM0gqU6g!!/m&ek=1&kp=1&pt=0&bo=0ABTAQAAAAADF7A!&tl=1&vuin=918103341&tm=1582981200&sce=60-4-3&rf=viewer_4" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      
 </view>
 <painter customStyle='position: absolute; left: -9999rpx;' palette="{{template}}" bind:imgOK="onImgOK"
     widthPixels="1000" />

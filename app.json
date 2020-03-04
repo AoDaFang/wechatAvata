@@ -6,7 +6,8 @@
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "应景头像",
-        "navigationBarTextStyle": "black"
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
     },
     "sitemapLocation": "sitemap.json",
     "usingComponents": {
